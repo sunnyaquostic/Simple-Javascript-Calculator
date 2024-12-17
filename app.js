@@ -11,7 +11,6 @@ function calculate(button) {
         calculation = []
         screenDisplay.textContent = '.'
     } else if (value === "=") {
-        console.log(accumulativeCalculation)
         screenDisplay.textContent =  eval(accumulativeCalculation)
     } else {
         calculation.push(value)
@@ -22,4 +21,3 @@ function calculate(button) {
 }
 
 buttons.forEach(button => button.addEventListener('click', () => calculate(button)))
-console.log(buttons)
